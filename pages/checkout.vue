@@ -10,19 +10,19 @@
                         el-col(:span="24")
                             el-form
                                 .el-form-item
-                                    el-input(type="text", placeholder="Adress")
+                                    el-input(type="text", placeholder="Adress", v-model="shipping.address")
                                 .el-form-item
-                                    el-input(type="text", placeholder="Country")
+                                    el-input(type="text", placeholder="Country", v-model="shipping.country")
                                 el-row
                                     el-col(:span="8")
-                                        el-input(type="text", placeholder="Postal code")
+                                        el-input(type="text", placeholder="Postal code", v-model="shipping.zip")
                                     el-col(:span="16")
-                                        el-input(type="text", placeholder="City")
-                    el-row
+                                        el-input(type="text", placeholder="City", v-model="shipping.city")
+                    el-row(:style="{ marginBottom: '10px'}")
                         el-col
                             button.btn.btn-success(
                                 @click="submitShippingDetails"
-                                :disabled="shippingSubmitted"
+                                v-if="!shippingSubmitted"
                             ) Submit
             template(v-if="shippingSubmitted")
                 el-row
@@ -105,7 +105,14 @@ export default {
         return {
             success: false,
             paymentMethodsContainer: {},
-            defaultMethods
+            defaultMethods,
+            shipping: {
+                address: 'Insulindeweg 24',
+                country: 'Netherlands',
+                zip: '1985DX',
+                city: 'Amsterdam'
+            }
+
         }
     },
     computed: {
