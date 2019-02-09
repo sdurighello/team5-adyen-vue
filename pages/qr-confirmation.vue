@@ -1,10 +1,28 @@
 <template lang="pug">
     main
-        p QR confirmation
+        header.header
+            a.back(href="javascript:history.go(-1)")
+            img(src="/logo.svg", alt="Adyou")
+        div.container
+        h1 Payment Details
+        dt Total
+        dd.value € 123
+        dt Shipping Details
+        dd.shipping
+            p.name
+            p.address Oakstraat 123
+            p.zip 1090 AM Amsterdam
+            p.country The Netherlands
+        dt Prefered payment method
+        dd.payment Credit Card
+        dt
+            img(src="/")
+        dd.cc **** **** **** 1234
 </template>
 
 <script>
 export default {
+    layout: 'qr',
     components: {
     },
     data() {
@@ -26,6 +44,24 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+    font-family: 'Fakt Blond' ;
+    src: url('/font/Fakt-Blond.woff2-Thin.woff2') format('woff2'),
+        url('/font/Fakt-Blond.woff2-Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Fakt Semi-Bold' ;
+    src: url('/font/FaktPro-SemiBold.woff') format('woff'),
+        url('/font/FaktPro-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+    font-stretch: normal;
+}
+
 .card {
     height: 300px;
 }
