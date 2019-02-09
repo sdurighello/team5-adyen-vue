@@ -130,8 +130,8 @@ export default {
 
 .shopping{ width: 60%;}
 .checkout{ width: 30%; text-align: center; padding: 0 40px;}
-.qr{ margin: 40px auto; width: 302px; height: 114px;}
+.qr{ margin: 40px auto; width: 302px; height: 114px; margin-left: -50px;}
 .or{ position: relative; z-index: 3; display: block; font-size: 16px; font-weight: bold; margin: 30px 0 60px; text-align: center;}
-.or:before{ position: absolute; z-index: 1; left: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.8); display: inline-block; width: 170px;}
-.or:after{ position: absolute; z-index: 1; right: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.8); display: inline-block; width: 170px;}
+.or:before{ position: absolute; z-index: 1; left: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.6); display: inline-block; width: 170px;}
+.or:after{ position: absolute; z-index: 1; right: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.6); display: inline-block; width: 170px;}
 </style>
