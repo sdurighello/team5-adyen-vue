@@ -1,7 +1,30 @@
 <template lang="pug">
     main
         el-col(:span="12", :offset="6")
-            template(v-if="!paymentSubmitted")
+            el-row()
+                el-col(:span="24")
+                    el-row
+                        el-col(:span="24")
+                            h3 Enter your shipment details
+                    el-row(:style="{ margin: '10px'}")
+                        el-col(:span="24")
+                            el-form
+                                .el-form-item
+                                    el-input(type="text", placeholder="Adress")
+                                .el-form-item
+                                    el-input(type="text", placeholder="Country")
+                                el-row
+                                    el-col(:span="8")
+                                        el-input(type="text", placeholder="Postal code")
+                                    el-col(:span="16")
+                                        el-input(type="text", placeholder="City")
+                    el-row
+                        el-col
+                            button.btn.btn-success(
+                                @click="submitShippingDetails"
+                                :disabled="shippingSubmitted"
+                            ) Submit
+            template(v-if="shippingSubmitted")
                 el-row
                     el-col(:span="24")
                         h3 Select your payment method
@@ -104,6 +127,9 @@ export default {
         },
         paymentResult() {
             return this.$store.state.paymentResult
+        },
+        shippingSubmitted() {
+            return this.$store.state.shippingSubmitted
         }
     },
     async created() {
@@ -144,6 +170,9 @@ export default {
             if (!this.paymentSubmitted) {
                 this.$store.commit('addSelectedPaymentMethod', method)
             }
+        },
+        submitShippingDetails() {
+            this.$store.commit('setShippingSubmitted', true)
         }
     }
 }
