@@ -2,7 +2,7 @@
     main
         el-col(:span="12", :offset="6")
             el-row
-                el-col(:span="24")
+                el-col.success(:span="24")
                     div(
                         v-if="paymentResult"
                     )
@@ -10,7 +10,7 @@
                             v-if="paymentResult.resultCode === 'Authorised'"
                         )
                             app-success(@restartCart="success = false")
-                            h2 Success!
+                            h2.title Success!
                             p Your order has been processed, it will be delivered shortly.</p>
                         el-card.card(
                             :class="{ 'cursor-pointer': false }"
@@ -91,8 +91,14 @@ export default {
 </script>
 
 <style scoped>
+.success{ text-align: center;}
+.title{ font-size: 32px; margin-bottom: 20px;}
 .card {
-    height: 300px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 160%;
+    display: inline-block;
+    padding: 15px 60px;
 }
 
 .cursor-pointer {
