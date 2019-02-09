@@ -2,7 +2,7 @@
     main
         header.header
             a.back(href="javascript:history.go(-1)")
-            img.logo(src="/logo.svg", alt="Adyou")
+            img.logo(src="/logo-white.svg", alt="Adyou")
         div.container
         h1.title Payment Details
         div.payment
@@ -63,11 +63,11 @@ export default {
     font-style: bold;
     font-stretch: normal;
 }
-
+    *{ box-sizing: border-box;}
     main{}
-    .header{}
+    .header{ background: linear-gradient(270deg, #43DFCE 14.82%, #15C56B 73.86%); display: block; text-align: center; width: 100%; height: 110px;}
     .back{}
-    .logo{}
+    .logo{ margin: 27px 0; width: 172px; height: 56px;}
     .container{}
     .title{}
     .payment{}
