@@ -12,12 +12,14 @@
                         small There are no aditional fees
                     dt Shipping Details
                     dd.shipping
+                        span.edit Edit
                         p.name
                         p.address Oakstraat 123
                         p.zip 1090 AM Amsterdam
                         p.country The Netherlands
                     dt Prefered payment method
                     dd.payment Credit Card
+                        span.edit Edit
                     dt
                         img(src="/mastercard.png")
                     dd.cc **** **** **** 1234
@@ -150,13 +152,16 @@ export default {
     .payment dd p{ line-height:  }
     .payment dt{ text-align: right; font-weight: 100;}
     .payment dt:after{ clear: both; content: ""; display: block; flex: 1; }
-    .payment dd{ color: rgba(0,0,0,.9); font-weight: 600; text-align: left;}
+    .payment dd{ position: relative; color: rgba(0,0,0,.9); font-weight: 600; text-align: left;}
     .payment dd small{ color: rgba(0,0,0,.5); display: block; font-size: 12px; font-weight: normal;}
     .payment dd.payment-type{}
     .payment dd.cc{}
     .submit{ background-color: rgb(1,18,44); border: none; border-radius: 4px; color: white; line-height: 30px; font-size: 20px; margin: 40px auto 0; padding: 15px 60px; text-transform: none;}
     .submit:hover{ background-color: rgb(27,43,68);}
     .submit:before{ background-image: url('/icon-lock.svg'); background-repeat: no-repeat; content: "";  display: inline-block; float: left; margin-right: 12px; width: 26px; height: 26px;}
+    .edit{ position: absolute; top: 15px; right: 70px; color: #067A34; font-size: 12px; font-weight: normal;}
+    .edit:before{ position: relative; top: 3px; content: ""; display: inline-block; background: url('/icon-edit.png') no-repeat; background-size: 85%; margin-right: 5px; width: 14px; height: 14px;}
+    .edit:hover{ border-bottom: 1px solid #067A34;}
 
 .card {
     height: 300px;
