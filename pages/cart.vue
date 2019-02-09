@@ -18,9 +18,9 @@
                 <h3>Total: {{ total | usdollar }}</h3>
             </div>
             <nuxt-link exact to="/checkout">
-                <el-button type="success" round>
+                <button type="button" class="btn btn-success">
                     Checkout
-                </el-button>
+                </button>
             </nuxt-link>
         </div>
 

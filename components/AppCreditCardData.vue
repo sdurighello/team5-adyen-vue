@@ -22,7 +22,7 @@
                         span(data-cse="encryptedSecurityCode")
         el-row
             el-col
-                el-button(
+                button.btn.btn-success(
                     @click="submitEncryptedValues"
                     :disabled="paymentSubmitted"
                 ) Submit
@@ -69,7 +69,7 @@ export default {
     },
     mounted() {
         const script = document.createElement('script')
-        script.innerHTML = `${SecureFields}`
+        script.innerHTML = `${SecureFields()}`
         document.head.appendChild(script)
     },
     methods: {
