@@ -84,6 +84,7 @@ export default {
             this.$store.commit('clearCartContents')
             this.$store.commit('setPaymentSubmitted', false)
             this.$store.commit('setAuthorizingPayment', false)
+            this.$store.commit('setShippingSubmitted', false)
             this.$store.commit('clearSelectedPaymentMethod')
         }
     }
