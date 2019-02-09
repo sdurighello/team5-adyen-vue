@@ -14,6 +14,7 @@ const createStore = () => {
             selectedBank: null,
             authorizingBank: false,
             bankAuthorizationResult: null,
+            shippingSubmitted: false,
             products: [
                 {
                     name: 'Khaki Suede Polish Work Boots',
@@ -141,6 +142,9 @@ const createStore = () => {
             addSelectedPaymentMethod: (state, item) => {
                 state.selectedPaymentMethod = item
             },
+            clearSelectedPaymentMethod: (state) => {
+                state.selectedPaymentMethod = null
+            },
             setPaymentSubmitted: (state, value) => {
                 state.paymentSubmitted = value
             },
@@ -161,6 +165,9 @@ const createStore = () => {
             },
             setBankAuthorizationResult: (state, value) => {
                 state.bankAuthorizationResult = value
+            },
+            setShippingSubmitted: (state, value) => {
+                state.shippingSubmitted = value
             }
         }
     })
