@@ -92,7 +92,7 @@ export default {
                 .post(
                     'Azure URL: https://team5-adyen-azure2.azurewebsites.net/api/adyen/payments?code=XVu7OQumsmPwD4Yj91Cj/H7UOw3D4NevOaUon/sCnuTPvyWxXFjYFg==',
                     {
-                        merchantAccount: 'TaoportfolioCOM',
+                        merchantAccount: 'Checkathon',
                         amount: {
                             currency: 'EUR',
                             value: Math.floor(this.total * 100)

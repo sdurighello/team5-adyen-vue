@@ -116,7 +116,7 @@ export default {
                 .post(
                     'https://team5-adyen-azure2.azurewebsites.net/api/adyen/payment-methods?code=KUYN3Rho6VX5uFCbxm59l/5qhp7EKua9Wly58/UyW0OTKI6DhtQNng==',
                     {
-                        merchantAccount: 'TaoportfolioCOM',
+                        merchantAccount: 'Checkathon',
                         countryCode: 'NL',
                         amount: {
                             currency: 'EUR',
