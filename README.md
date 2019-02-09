@@ -1,6 +1,6 @@
 # team5-adyen-vue
 
-> Team 5 Adyen Checkathon
+> Team 5 Adyen TeamFive
 
 ## Build Setup
 

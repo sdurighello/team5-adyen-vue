@@ -99,7 +99,7 @@ export default {
                     .post(
                         'https://team5-adyen-azure2.azurewebsites.net/api/adyen/payments?code=XVu7OQumsmPwD4Yj91Cj/H7UOw3D4NevOaUon/sCnuTPvyWxXFjYFg==',
                         {
-                            merchantAccount: 'Checkathon',
+                            merchantAccount: 'TeamFive',
                             amount: {
                                 currency: 'EUR',
                                 amount: Math.floor(this.total * 100)
