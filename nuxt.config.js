@@ -9,6 +9,7 @@ module.exports = {
     head: {
         title: pkg.name,
         script: [
+            { src: 'https://checkoutshopper-test.adyen.com/checkoutshopper/assets/js/sdk/checkoutSecuredFields.1.5.1.min.js' }
         ],
         meta: [
             { charset: 'utf-8' },

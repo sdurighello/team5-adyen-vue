@@ -6,6 +6,14 @@ const createStore = () => {
             cartTotal: 0,
             cart: {},
             sale: false,
+            selectedPaymentMethod: null,
+            paymentSubmitted: false,
+            authorizingPayment: false,
+            paymentResult: null,
+            bankHasBeenSelected: false,
+            selectedBank: null,
+            authorizingBank: false,
+            bankAuthorizationResult: null,
             products: [
                 {
                     name: 'Khaki Suede Polish Work Boots',
@@ -16,7 +24,7 @@ const createStore = () => {
                     img: 'shoe1.png'
                 },
                 {
-                    name: 'Camo Fang Backpack Jungle',
+                    name: 'Green Fang Jacket Jungle',
                     price: 39.99,
                     category: 'women',
                     sale: false,
@@ -72,7 +80,7 @@ const createStore = () => {
                     img: 'shirt2.png'
                 },
                 {
-                    name: 'Camo Fang Backpack Jungle',
+                    name: 'Camo Fang Jacket Jungle',
                     price: 59.99,
                     category: 'women',
                     sale: true,
@@ -129,6 +137,30 @@ const createStore = () => {
                     stateItem.count = 1
                     state.cart[item.name] = stateItem
                 }
+            },
+            addSelectedPaymentMethod: (state, item) => {
+                state.selectedPaymentMethod = item
+            },
+            setPaymentSubmitted: (state, value) => {
+                state.paymentSubmitted = value
+            },
+            setAuthorizingPayment: (state, value) => {
+                state.authorizingPayment = value
+            },
+            setPaymentResult: (state, value) => {
+                state.paymentResult = value
+            },
+            setBankHasBeenSelected: (state, value) => {
+                state.bankHasBeenSelected = value
+            },
+            setSelectedBank: (state, value) => {
+                state.selectedBank = value
+            },
+            setAuthorizingBank: (state, value) => {
+                state.authorizingBank = value
+            },
+            setBankAuthorizationResult: (state, value) => {
+                state.bankAuthorizationResult = value
             }
         }
     })
