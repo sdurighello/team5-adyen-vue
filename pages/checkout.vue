@@ -92,7 +92,6 @@ export default {
         total() {
             return Object.values(this.cart)
                 .reduce((acc, el) => acc + (el.count * el.price), 0)
-                .toFixed(2)
         },
         selectedPaymentMethod() {
             return this.$store.state.selectedPaymentMethod
@@ -120,7 +119,7 @@ export default {
                         countryCode: 'NL',
                         amount: {
                             currency: 'EUR',
-                            amount: this.total
+                            amount: Math.floor(this.total * 100)
                         }
                     },
                     {
