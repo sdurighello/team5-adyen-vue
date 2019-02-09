@@ -127,14 +127,9 @@ export default {
             }
             this.$store.commit('setPaymentResult', paymentResult)
             this.$store.commit('setAuthorizingPayment', false)
-            this.resetCart()
             this.$router.push({
                 path: '/checkout-results'
             })
-        },
-        resetCart() {
-            this.$store.commit('clearCartCount')
-            this.$store.commit('clearCartContents')
         }
     }
 }

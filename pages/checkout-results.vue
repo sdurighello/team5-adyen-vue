@@ -76,8 +76,16 @@ export default {
             }
             this.$store.commit('setPaymentResult', paymentResult)
         }
+        this.resetCart()
     },
     methods: {
+        resetCart() {
+            this.$store.commit('clearCartCount')
+            this.$store.commit('clearCartContents')
+            this.$store.commit('setPaymentSubmitted', false)
+            this.$store.commit('setAuthorizingPayment', false)
+            this.$store.commit('clearSelectedPaymentMethod')
+        }
     }
 }
 </script>
