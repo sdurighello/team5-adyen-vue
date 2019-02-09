@@ -9,6 +9,7 @@
                 div.payment
                     dt Total
                     dd.value € {{total}}
+                        small There are no aditional fees
                     dt Shipping Details
                     dd.shipping
                         p.name
@@ -150,6 +151,7 @@ export default {
     .payment dt{ text-align: right; font-weight: 100;}
     .payment dt:after{ clear: both; content: ""; display: block; flex: 1; }
     .payment dd{ color: rgba(0,0,0,.9); font-weight: 600; text-align: left;}
+    .payment dd small{ color: rgba(0,0,0,.5); display: block; font-size: 12px; font-weight: normal;}
     .payment dd.payment-type{}
     .payment dd.cc{}
     .submit{ background-color: rgb(1,18,44); border: none; border-radius: 4px; color: white; line-height: 30px; font-size: 20px; margin: 40px auto 0; padding: 15px 60px; text-transform: none;}

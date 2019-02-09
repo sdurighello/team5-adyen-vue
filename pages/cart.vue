@@ -1,32 +1,36 @@
 <template>
     <div class="capsule cart">
         <div v-if="cartTotal > 0">
-            <h1>Cart</h1>
-            <div
-                v-for="item in cart"
-                :key="item.name"
-                class="cartitems"
-            >
-                <div class="carttext">
-                    <h4>{{ item.name }}</h4>
-                    <p>{{ item.price | usdollar }} x {{ item.count }}</p>
-                    <p>Total for this item: <strong>{{ item.price * item.count }}</strong></p>
+            <div class="shopping">
+                <h2>Cart</h2>
+                <div
+                    v-for="item in cart"
+                    :key="item.name"
+                    class="cartitems"
+                >
+                    <div class="carttext">
+                        <h4>{{ item.name }}</h4>
+                        <p>{{ item.price | usdollar }} x {{ item.count }}</p>
+                        <p>Total for this item: <strong>{{ item.price * item.count }}</strong></p>
+                    </div>
+                    <img class="cartimg" :src="`/${item.img}`" :alt="`Image of ${item.name}`">
                 </div>
-                <img class="cartimg" :src="`/${item.img}`" :alt="`Image of ${item.name}`">
+                <div class="total">
+                    <h3>Total: {{ total | usdollar }}</h3>
+                </div>
             </div>
-            <div class="total">
-                <h3>Total: {{ total | usdollar }}</h3>
+            <div class="checkout">
+                <h2>Checkout</h2>
+                <nuxt-link exact to="/qr-confirmation">
+                    <img class="qr" src="/qr-group.png" />
+                </nuxt-link>
+                <span class="or">or</span>
+                <nuxt-link exact to="/checkout">
+                    <button type="button" class="btn btn-primarys">
+                        Very Long Checkout
+                    </button>
+                </nuxt-link>
             </div>
-            <nuxt-link exact to="/qr-confirmation">
-                <button type="button" class="btn btn-success">
-                    QR payment
-                </button>
-            </nuxt-link>
-            <nuxt-link exact to="/checkout">
-                <button type="button" class="btn btn-primarys">
-                    Very Long Checkout
-                </button>
-            </nuxt-link>
         </div>
 
         <div v-else-if="cartTotal === 0 && success === false" class="empty">
@@ -83,10 +87,10 @@ export default {
 <style scoped>
 .cart > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  align-content: start;
+  align-items: start;
   padding: 50px;
   background: white;
   border-radius: 3px;
@@ -101,7 +105,6 @@ export default {
 
 .cartitems {
   padding: 30px;
-  border-bottom: 1px solid #ccc;
   width: 500px;
 }
 
@@ -124,4 +127,11 @@ export default {
 .total {
   margin: 20px 0;
 }
+
+.shopping{ width: 60%;}
+.checkout{ width: 30%; text-align: center; padding: 0 40px;}
+.qr{ margin: 40px auto; width: 302px; height: 114px;}
+.or{ position: relative; z-index: 3; display: block; font-size: 16px; font-weight: bold; margin: 30px 0 60px; text-align: center;}
+.or:before{ position: absolute; z-index: 1; left: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.8); display: inline-block; width: 170px;}
+.or:after{ position: absolute; z-index: 1; right: -100px; top: 50%; content: ""; border-bottom: 1px solid rgba(0,0,0,.8); display: inline-block; width: 170px;}
 </style>
