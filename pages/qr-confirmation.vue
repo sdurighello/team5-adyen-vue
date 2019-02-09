@@ -136,41 +136,24 @@ export default {
 </script>
 
 <style scoped>
-
-@font-face {
-    font-family: 'FaktBlond' ;
-    src: url('/font/Fakt-Blond.woff2') format('woff2'),
-        url('/font/Fakt-Blond.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-}
-@font-face {
-    font-family: 'FaktBold' ;
-    src: url('/font/FaktPro-SemiBold.woff') format('woff'),
-        url('/font/FaktPro-SemiBold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: bold;
-    font-stretch: normal;
-}
-    *{ box-sizing: border-box;font-family: 'FaktBlond'; line-height: 150%;}
+    *{ box-sizing: border-box; font-family: "FaktBlond", Arial, sans-serif; line-height: 140%;}
     .wrapper{ background: white; }
     .header{ background: linear-gradient(270deg, #43DFCE 14.82%, #15C56B 73.86%); display: block; text-align: center; width: 100%; height: 110px;}
     .back{}
     .logo{ margin: 27px 0 0; width: 172px; height: 56px;}
-    .container{ margin: 0 auto; width: 800px;}
-    .title{ font-size: 34px; font-family: "Fakt Semi-Bold"; letter-spacing: 0.01em; margin: 64px auto; text-align: center;}
+    .container{ margin: 0 auto; text-align: center; width: 800px;}
+    .title{ color: rgb(0,17,44); font-size: 30px; font-weight: 400; letter-spacing: 0.01em; margin: 64px auto 42px; text-align: center;}
     .payment{ display: flex; flex-wrap: wrap;}
     .payment dt,
-    .payment dd{ flex: 0 50%; padding: 10px;}
+    .payment dd{ flex: 0 50%; font-size: 20px; padding: 10px;}
     .payment dd p{ line-height:  }
-    .payment dt{ text-align: right;}
+    .payment dt{ text-align: right; font-weight: 100;}
     .payment dt:after{ clear: both; content: ""; display: block; flex: 1; }
-    .payment dd{ font-weight: bold;}
+    .payment dd{ color: rgba(0,0,0,.9); font-weight: 600; text-align: left;}
     .payment dd.payment-type{}
     .payment dd.cc{}
-    .submit{ margin: 30px auto 0; background: #00112C; border-radius: 10px; color: white; line-height: 24px;}
-    .submit:before{ content: ""; border: 1px solid white; display: inline-block; width: 24px; height: 24px;}
+    .submit{ background: #00112C; border: none; border-radius: 4px; color: white; line-height: 30px; font-size: 20px; margin: 30px auto 0; padding: 15px 60px; text-transform: none;}
+    .submit:before{ background-image: url('/icon-lock.svg'); background-repeat: no-repeat; content: "";  display: inline-block; float: left; margin-right: 12px; width: 26px; height: 26px;}
 
 .card {
     height: 300px;

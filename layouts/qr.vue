@@ -16,10 +16,28 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: 'FaktBlond' ;
+    src: url('/font/Fakt-Blond.woff2') format('woff2'),
+        url('/font/Fakt-Blond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'FaktBold' ;
+    src: url('/font/FaktPro-SemiBold.woff') format('woff'),
+        url('/font/FaktPro-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+    font-stretch: normal;
+}
 html,
 body {
   height: 100%;
   margin: 0;
+  background: white;
+
 }
 
 .clear {
