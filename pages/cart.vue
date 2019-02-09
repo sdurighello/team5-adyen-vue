@@ -17,9 +17,14 @@
             <div class="total">
                 <h3>Total: {{ total | usdollar }}</h3>
             </div>
-            <nuxt-link exact to="/checkout">
+            <nuxt-link exact to="/qr-confirmation">
                 <button type="button" class="btn btn-success">
-                    Checkout
+                    QR payment
+                </button>
+            </nuxt-link>
+            <nuxt-link exact to="/checkout">
+                <button type="button" class="btn btn-primarys">
+                    Very Long Checkout
                 </button>
             </nuxt-link>
         </div>
