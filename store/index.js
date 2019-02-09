@@ -141,6 +141,9 @@ const createStore = () => {
             addSelectedPaymentMethod: (state, item) => {
                 state.selectedPaymentMethod = item
             },
+            clearSelectedPaymentMethod: (state) => {
+                state.selectedPaymentMethod = null
+            },
             setPaymentSubmitted: (state, value) => {
                 state.paymentSubmitted = value
             },
