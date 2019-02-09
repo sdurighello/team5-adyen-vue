@@ -2,22 +2,24 @@
     main
         header.header
             a.back(href="javascript:history.go(-1)")
-            img(src="/logo.svg", alt="Adyou")
+            img.logo(src="/logo.svg", alt="Adyou")
         div.container
-        h1 Payment Details
-        dt Total
-        dd.value € 123
-        dt Shipping Details
-        dd.shipping
-            p.name
-            p.address Oakstraat 123
-            p.zip 1090 AM Amsterdam
-            p.country The Netherlands
-        dt Prefered payment method
-        dd.payment Credit Card
-        dt
-            img(src="/")
-        dd.cc **** **** **** 1234
+        h1.title Payment Details
+        div.payment
+            dt Total
+            dd.value € 123
+            dt Shipping Details
+            dd.shipping
+                p.name
+                p.address Oakstraat 123
+                p.zip 1090 AM Amsterdam
+                p.country The Netherlands
+            dt Prefered payment method
+            dd.payment Credit Card
+            dt
+                img(src="/")
+            dd.cc **** **** **** 1234
+        button.submit Confirm Payment
 </template>
 
 <script>
@@ -61,6 +63,19 @@ export default {
     font-style: bold;
     font-stretch: normal;
 }
+
+    main{}
+    .header{}
+    .back{}
+    .logo{}
+    .container{}
+    .title{}
+    .payment{}
+    .payment dt{}
+    .payment dd{}
+    .payment dd.payment-type{}
+    .payment dd.cc{}
+    .submit{}
 
 .card {
     height: 300px;
