@@ -52,24 +52,14 @@ The exact issues you focus on and what you build is up to you and your team, but
 - Code for the Product catalog and Cart boilerplate was re-used from [srdra's sample vue shop](https://github.com/sdras/sample-vue-shop)
 - Checkout and payment process created new as per hackathon requirements
 - Credit card details encrypted using [Adyen's SecureFields library](https://docs.adyen.com/developers/checkout/api-integration/collecting-raw-card-data)
+- Build setup:
+    - install dependencies: `yarn install`
+    - serve with hot reload at localhost:3000 `yarn run dev`
 
 #### Back-end
 
-- Serverless API functions on Microsoft Azure [in this repo](https://github.com/sdurighello/team5-adyen-azure) to all Adyen Checkout APIs
+- Serverless API functions on Microsoft Azure [in this repo](https://github.com/sdurighello/team5-adyen-azure) to all Adyen Checkout APIs 
 
-##### Build Setup
+#### Mobile app (Adyou)
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
+- Sketched but not technically implemented. For the demo it will be assumed to be installed and fully functional (including integration on Adyen's servers)
