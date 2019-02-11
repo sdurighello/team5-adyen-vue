@@ -15,7 +15,7 @@ The exact issues you focus on and what you build is up to you and your team, but
 - To what extent you leverage the capabilities of the API
 
 
-## The solution
+## The solution (code name 'Adyou')
 
 ### Implement a one-click checkout based on an external mobile app and a QR code displayed on the shopping page. The mobile app would be owned by Adyen with whom the shopper would have an account to maintain its payment/shipping information. The QR code would be connected to such account and would be available for merchants connected to Adyen.
 
