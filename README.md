@@ -1,5 +1,13 @@
 # Adyen Checkathon - Amsterdam January 2019 - Team Five
 
+## The team
+
+- [Alice Carreau](https://www.linkedin.com/in/alice-carreau-27841a23/) - Marketing research
+- [Fabio Zuppone Chavasco](https://www.linkedin.com/in/fabiozc/) - Product Designer
+- [Stefano Durighello](https://www.linkedin.com/in/stefanodurighello/) - Developer
+- [Paulien van der Leeden](https://www.linkedin.com/in/paulienvanderleeden/) - Product Manager
+- [Roza Turowska](https://www.linkedin.com/in/róża-turowska-62b80534/) - Designer
+
 ## The challenge
 
 In a team with diverse skills and backgrounds, you are going to build a functional website for a company of your choosing, using our Checkout API. Your team should address the problems this company faces when having shoppers pay through their website, including issues such as handling risky/fraudulent transactions, redirecting to local payment methods, saving sensitive shopper information, and so on.
