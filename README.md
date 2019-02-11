@@ -46,7 +46,7 @@ The exact issues you focus on and what you build is up to you and your team, but
 
 ### Technical overview
 
-#### Front-end (this repo)
+#### Front-end ([this repo](https://github.com/sdurighello/team5-adyen-vue))
 
 - VueJS scaffolding with NuxtJS, For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 - Code for the Product catalog and Cart boilerplate was re-used from [srdra's sample vue shop](https://github.com/sdras/sample-vue-shop)
