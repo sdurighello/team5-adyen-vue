@@ -2,6 +2,8 @@
 
 ## The team
 
+![the team](./static/team_five.png)
+
 - [Alice Carreau](https://www.linkedin.com/in/alice-carreau-27841a23/) - Marketing research
 - [Fabio Zuppone Chavasco](https://www.linkedin.com/in/fabiozc/) - Product Designer
 - [Stefano Durighello](https://www.linkedin.com/in/stefanodurighello/) - Developer
