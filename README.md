@@ -1,14 +1,15 @@
-# Adyen Checkathon - Amsterdam January 2019 - Team Five
+# [Adyen Checkathon - Amsterdam January 2019 - Team Five](https://sdurighello.github.io/team5-adyen-vue/)
 
 ## The team
 
 ![the team](./static/team_five.png)
 
-- [Alice Carreau](https://www.linkedin.com/in/alice-carreau-27841a23/) - Marketing research
 - [Fabio Zuppone Chavasco](https://www.linkedin.com/in/fabiozc/) - Product Designer
-- [Stefano Durighello](https://www.linkedin.com/in/stefanodurighello/) - Developer
-- [Paulien van der Leeden](https://www.linkedin.com/in/paulienvanderleeden/) - Product Manager
 - [Roza Turowska](https://www.linkedin.com/in/róża-turowska-62b80534/) - Designer
+- [Stefano Durighello](https://www.linkedin.com/in/stefanodurighello/) - Front-end & Back-end Developer
+- [Olga Mishyna](https://www.linkedin.com/in/mishyna/) - Adyen Coach
+- [Paulien van der Leeden](https://www.linkedin.com/in/paulienvanderleeden/) - Product Manager
+- [Alice Carreau](https://www.linkedin.com/in/alice-carreau-27841a23/) - Marketing research
 
 ## The challenge
 
